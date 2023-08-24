@@ -53,8 +53,8 @@ const users = [
     },
 ]
 
-console.log(users[0].email);
-console.log(tinderUser);
+// console.log(users[0].email);
+// console.log(tinderUser);
 
 // console.log(Object.keys(tinderUser));
 
@@ -63,10 +63,27 @@ console.log(tinderUser);
 // console.log(Object.values(tinderUser));
 
 
-console.log(Object.entries(tinderUser))
+// console.log(Object.entries(tinderUser))
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'))
-console.log(tinderUser.hasOwnProperty('isLogged'))
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'))
+// console.log(tinderUser.hasOwnProperty('isLogged'))
+
+
+
+// Object de-structure and JSON Api
+
+
+const course = {
+    coursename: "Js-in-hindi",
+    courseprice: "999",
+    courseInstructor: "Hitesh",
+
+
+}
+
+const  {courseInstructor: instructor} = course 
+
+console.log(instructor);
 
 
 
