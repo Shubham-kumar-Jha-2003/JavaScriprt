@@ -23,7 +23,7 @@ const coding = ["js", "cpp", "java", "rb", "cpp"];
 
 coding.forEach( (item, index, arr) => {
 
-    console.log(item, index, arr)
+    // console.log(item, index, arr)
 
 })
 
@@ -42,3 +42,7 @@ const myCoding = [
         languageFile: "cpp"
     }
 ]
+
+myCoding.forEach( (item) => {
+    console.log(item.languageName);
+})
