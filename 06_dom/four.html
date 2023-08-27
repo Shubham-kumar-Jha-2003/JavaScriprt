@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code | DOM</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+    
+</body>
+
+<script>
+    function addLanguage(langName) {
+
+        const li = document.createElement('li')
+
+        li.innerHTML = `${langName}`
+
+        document.querySelector('.language').appendChild(li)
+    }
+
+    addLanguage("java");
+    addLanguage('typescript')
+
+    function addOptiLanguage (langName) {
+
+       const li =  document.createElement('li');
+       li.appendChild(document.createTextNode(langName))
+       document.querySelector('.language').appendChild(li);
+
+    }
+
+    addOptiLanguage("cpp")
+    addOptiLanguage("ruby")
+
+    // Edit concept in DOM 
+
+    const secondLanguage = document.querySelector('li:nth-child(2)');
+    //secondLanguage.innerHTML = "swift"
+
+    const newLi = document.createElement('li');
+
+    newLi.textContent = "mojo";
+
+    secondLanguage.replaceWith(newLi);
+
+    // document.querySelector('.language').appendChild(newLi) This will add new list in my html document
+
+
+    // edit 
+
+    const firstLang = document.querySelector('li:first-child')
+    console.log(firstLang);
+    firstLang.outerHTML = "<li> Typescript </li>"
+
+    
+    // remove 
+
+    const lastLang = document.querySelector('li:last-child');
+    console.log(lastLang);
+
+    lastLang.remove();
+
+
+</script>
+</html>
