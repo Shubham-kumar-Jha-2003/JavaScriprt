@@ -205,11 +205,11 @@ window.addEventListener('keydown', (e) => {
 
  -->
 
-<!--  
+ 
 # Project 6
 
 ## Solution of Project 6
-
+<!-- 
 //generate a random color
 
 const randomColor = function () {
